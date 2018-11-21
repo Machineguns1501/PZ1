@@ -1,11 +1,11 @@
 'use strict';
 
-let money = prompt("Ваш бюджет на месяц?", ""),
-    time = prompt("Введите дату в формате YYYY-MM-DD", ""),
-    exp1 = prompt("Введите обязательную статью расходов в этом месяце", ""),
-    exp2 = prompt("Во сколько обойдется?", ""),
-    exp3 = prompt("Введите обязательную статью расходов в этом месяце", ""),
-    exp4 = prompt("Во сколько обойдется?", "");
+let money = prompt("Ваш бюджет на месяц?", ''),
+    time = prompt("Введите дату в формате YYYY-MM-DD", ''),
+    exp1 = prompt("Введите обязательную статью расходов в этом месяце", ''),
+    exp2 = prompt("Во сколько обойдется?", ''),
+    exp3 = prompt("Введите обязательную статью расходов в этом месяце", ''),
+    exp4 = prompt("Во сколько обойдется?", '');
 
 let appData = {
     budjet: money,
@@ -14,8 +14,8 @@ let appData = {
         a1: exp1,
         a2: exp2
     },
-    optionalExpenses: null,
-    income: null,
+    optionalExpenses: {},
+    income: [],
     savings: false
 };
 
